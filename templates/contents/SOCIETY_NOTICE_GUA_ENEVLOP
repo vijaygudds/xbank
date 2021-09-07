@@ -1,0 +1,18 @@
+<p>&nbsp;</p>
+<table style="height: 181px;" width="563">
+<tbody>
+<tr>
+<td style="padding-left: 60px;">
+<p>To,&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;खाता संख्या -{$AccountNumber}</p>
+<p>{$guarantor_name} S/o {$guarantor_FatherName}</p>
+<p>Address Vill / Post {$guarantor_CurrentAddress}&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</p>
+<p>Mob. No. -&nbsp;&nbsp;{$guarantor_PhoneNos}</p>
+<p>Bhawani Credit Co-Op. Society Ltd.</p>
+<p>10,&nbsp; Dudiya Ganesh Ji, Sajjangar Rod Udaiur</p>
+<p>9509619462</p>
+<p>&nbsp;</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>

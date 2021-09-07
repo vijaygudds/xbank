@@ -1,0 +1,280 @@
+<style>
+
+
+#main {
+    background-image: url("templates/images/fd bond.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    font-size: 11px;
+    height: 136mm;
+    position: relative;
+    width: 263mm;
+}
+	#main > img{
+		width:100%;
+		position: absolute;
+		top:0;
+		left:0;
+	}
+	.branch{
+		/*width:350px;*/
+		position:absolute;
+		top:29mm;
+		left:175mm;
+		text-transform: capitalize;
+		/*font-size:18px;*/
+	}
+	.branch_1{
+		position:absolute;
+		top:20mm;
+		left:40mm;
+		text-transform: capitalize;
+		/*font-size:18px;*/
+	}
+	.date{
+		width:350px;
+		position:absolute;
+		top:35mm;
+		left:60mm;
+		text-transform: capitalize;
+		font-size:12px;
+	}
+	.name {
+	    left: 190mm;
+	    position: absolute;
+	    text-transform: capitalize;
+	    top: 50mm;
+	    width: 350px;
+	}
+	.name_1 {
+	    left: 23mm;
+	    position: absolute;
+	    text-transform: capitalize;
+	    top: 55mm;
+	    width: 350px;
+	}	
+	
+	.f_name {
+	    left: 185mm;
+	    position: absolute;
+	    text-transform: capitalize;
+	    top: 58mm;
+	    width: 400px;
+	}
+	.f_name_1 {
+	    left: 30mm;
+	    position: absolute;
+	    text-transform: capitalize;
+	    top: 60mm;
+	    width: 400px;
+	}
+	.address {
+	    left: 153mm;
+	    overflow-wrap: break-word;
+	    position: absolute;
+	    text-transform: capitalize;
+	    top: 66mm;
+	    width: 105mm;
+	}
+	.address_1 {
+	    left: 16mm;
+	    position: absolute;
+	    text-transform: capitalize;
+	    top: 65mm;
+	    width: 25%;
+	}
+	
+	
+	.d_amount_word1 {
+	    left: 186mm;
+	    position: absolute;
+	    text-transform: capitalize;
+	    top: 85mm;
+	    width: 63mm;
+	}
+	.d_amount_word2 {
+	    left: 20mm;
+	    position: absolute;
+	    text-transform: capitalize;
+	    top: 87mm;
+	    width: 20%;
+	}
+	.nominee_name {
+	    left: 168mm;
+	    position: absolute;
+	    text-transform: capitalize;
+	    top: 92mm;
+	    width: 33mm;
+	}
+	
+	.nominee_relation {
+	    left: 215mm;
+	    position: absolute;
+	    text-transform: capitalize;
+	    top: 92mm;
+	}
+
+	.nominee_age {
+	    left: 249mm;
+	    position: absolute;
+	    top: 92mm;
+	}
+		
+	.nominee_dob {
+	    left: 183mm;
+	    letter-spacing: 8px;
+	    position: absolute;
+	    top: 100mm;
+	    width: 250px;
+	}
+	.special_candidate{
+		position:absolute;
+		top:486px;
+		left:449px;
+		/*font-size:18px;*/
+	}
+	.account_no{
+		position:absolute;
+		top:36mm;
+		left:98mm;
+		font-size:10px;
+	}
+	.account_no_1{
+		position:absolute;
+		top:45mm;
+		left:17mm;
+		font-size:10px;
+	}
+	.date_of_issue{
+		position:absolute;
+		top:47mm;
+		left:98mm;
+		font-size:12px;
+		width: 70px;
+	}
+	
+	.date_of_issue_1 {
+	    left: 55mm;
+	    position: absolute;
+	    top: 69mm;
+	}
+	.as_on_date{
+		position:absolute;
+		top:56mm;
+		left:98mm;
+	}
+	.as_on_date_1{
+		position:absolute;
+		top:74mm;
+		left:55mm;
+		width: 70px;
+	}
+	.period{
+		position:absolute;
+		top:65mm;
+		left:98mm;
+	}
+	.period_1{
+		position:absolute;
+		top:78mm;
+		left:20mm;
+	}
+	.due_date{
+		position:absolute;
+		top:76mm;
+		left:98mm;
+	}
+	.due_date1 {
+	    left: 55mm;
+	    position: absolute;
+	    top: 92mm;
+	}
+	.interest{
+		position:absolute;
+		top:86mm;
+		left:98mm;
+	}
+	.interest1{
+		position:absolute;
+		top:96mm;
+		left:20mm;
+	}
+	.d_amount1{
+		position:absolute;
+		top:95mm;
+		left:98mm;
+	}
+	.d_amount2{
+		position:absolute;
+		top:83mm;
+		left:30mm;
+	}
+	.maturity_amount{
+		position:absolute;
+		top:106mm;
+		left:98mm;
+	}
+	.maturity_amount1{
+		position:absolute;
+		top:101mm;
+		left:30mm;
+	}
+	.maturity_amount_word {
+	    top: 105mm;
+	    left: 20mm;
+	    position: absolute;
+	    width: 25%;
+	}
+	.moblie_no{
+		position:absolute;
+		top:114mm;
+		left:35mm;
+	}
+	@media print {
+		#main {
+		    background-image:none;
+		}
+	}
+
+</style>
+	<div class="container">
+		{$Content}
+		<div id="main" class="fd-bond-layout ">
+			<!-- <img src="templates/images/fd bond.jpg" /> -->
+			<div class="branch">{$branch}</div>
+			<div class="branch_1">{$branch_1}</div>
+			<div class="date">{$date}</div>
+			<div class="name">{$name}</div>
+			<div class="name_1">{$name_1}</div>
+			<div class="f_name">{$f_name}</div>
+			<div class="f_name_1">{$f_name_1}</div>
+			<div class="address">{$address}</div>
+			<div class="address_1">{$address_1}</div>
+			<div class="d_amount_word1">{$deposite_amount_word_1}</div>
+			<div class="d_amount_word2">{$deposite_amount_word_2}</div>
+			<div class="nominee_name">{$nominee_name}</div>
+			<div class="nominee_relation">{$relation_with_nominee}</div>
+			<div class="nominee_age">{$nominee_age}</div>
+			<div class="nominee_dob">{$nominee_dob}</div>
+			<div class="special_candidate">{$special_candidate}</div>
+				
+			<div class="account_no">{$account_no}</div>
+			<div class="account_no_1">{$account_no_1}</div>
+			<div class="date_of_issue">{$date_of_issue}</div>
+			<div class="date_of_issue_1">{$date_of_issue_1}</div>
+			<div class="as_on_date">{$as_on_date}</div>
+			<div class="as_on_date_1">{$as_on_date_1}</div>
+			<div class="period">{$period}</div>
+			<div class="period_1">{$period_1}</div>
+			<div class="due_date">{$due_date}</div>
+			<div class="due_date1">{$due_date_1}</div>
+			<div class="interest">{$interest}</div>
+			<div class="interest1">{$interest_1}</div>
+			<div class="d_amount1">{$deposite_amount_1}</div>
+			<div class="d_amount2">{$deposite_amount_2}</div>
+			<div class="maturity_amount">{$maturity_amount}</div>
+			<div class="maturity_amount1">{$maturity_amount_1}</div>
+			<div class="maturity_amount_word">{$maturity_amount_word}</div>
+			<div class="moblie_no">{$moblie_no}</div>
+       	</div>
+    </div>  

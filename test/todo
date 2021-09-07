@@ -1,0 +1,22 @@
+=== 2015
+
+Agent TDS report ... FD Deposit amount .. why few FD is taking 00:00:00 time ???
+
+Sponsor Chain Path System finalize and coding implementation
+
+
+
+========== before 14-may 2015
+DDS next date mature check
+DDS int amount exclude for collection and commission
+
+80% limit in SL (DDS/RD amount to be checked against is = Amount submitted till date)
+
+Loan provision 365 days .. should be in RD as per Devendra sir.. check why this code is here .
+
+store main used submit ka voucher banana hai ...  
+
+edit / delete transaction Premium table effect ????
+
+
+ACL

@@ -1,0 +1,11 @@
+.bank-col-1{
+	width: 6%!important;
+	text-align: center;
+}
+.bank-col-2{
+	text-align: center;
+	width: 4%!important;
+}
+.bank-col-3 input{
+	height: 100px!important;
+}

@@ -1,0 +1,18 @@
+<p>&nbsp;</p>
+<table style="height: 166px;" width="557">
+<tbody>
+<tr>
+<td style="padding-left: 60px;">
+<p>To,&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; खाता संख्या - {$AccountNumber}</p>
+<p>{$member_name} S/o {$member_FatherName}</p>
+<p>Address {$member_CurrentAddress}</p>
+<p>Mob. No. -&nbsp;&nbsp;{$member_PhoneNos}&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</p>
+<p>Bhawani Credit Co-Op. Society Ltd.</p>
+<p>10, Dudiya Ganesh Ji, Sajjangar Rod Udaiur</p>
+<p>9509619462</p>
+<p>&nbsp;</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
