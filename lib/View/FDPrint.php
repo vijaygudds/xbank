@@ -10,12 +10,35 @@ class View_FDPrint extends View{
 		// throw new Exception($this->model['Nominee'], 1);
 		// $emp->convert_number_to_words($emp['net_payable'])
 		// throw new Exception($account->convert_number_to_words($account['Amount']), 1);
-		
+		$joint_member_string=[];
+		$joint_model = $this->add('Model_JointMember');
+		$joint_model->addCondition('account_id',$account->id);
+		foreach ($joint_model as $m) {
+			$joint_member_string[] =$m['member'] ;
+		}
+		$str = implode(', ',$joint_member_string);
+
+		// var_dump($str);
 		$this->template->set('branch',$account->ref('branch_id')->get('name'));
 		$this->template->set('branch_1',$account->ref('branch_id')->get('name'));
 		$this->template->set('date',date("d-M-Y",strtotime($account['created_at'])));
-		$this->template->set('name',$account['ModeOfOperation']==="Joint"?$account->ref('member_id')->get('name')." (Joint) ":$account->ref('member_id')->get('name'));
-		$this->template->set('name_1',$account->ref('member_id')->get('name'));
+		if($account['ModeOfOperation']!=="Joint"){
+			$this->template->set('name',$account->ref('member_id')->get('name'));
+
+		}else{
+			$this->template->setHtml('name_j',$account->ref('member_id')->get('name')." (Joint) "."<div style='font-size:9px'>".$str."</div>" );
+
+		}
+		
+		if($account['ModeOfOperation']!=="Joint"){
+			$this->template->set('name_1',$account->ref('member_id')->get('name'));
+
+		}else{
+			$this->template->setHtml('name_1_j',$account->ref('member_id')->get('name')." (Joint) "."<div style='font-size:9px'>".$str."</div>" );
+
+		}
+
+		// $this->template->set('name_1',$account->ref('member_id')->get('name'));
 		$this->template->set('f_name',$account->ref('member_id')->get('FatherName'));
 		$this->template->set('f_name_1',$account->ref('member_id')->get('FatherName'));
 		$this->template->set('address',$account->ref('member_id')->get('CurrentAddress'));
