@@ -55,7 +55,7 @@ class page_reports_agent_tdsfromtable extends Page {
 		$grid = $this->add('Grid');
 		$grid->setModel($model);
 
-		$grid->addPaginator(200);
+		$grid->addPaginator(1000);
 		$grid->addTotals(array('total_commission','tds','net_commission'));
 
 		$grid->removeColumn('transaction');

@@ -185,6 +185,12 @@ class Frontend extends ApiFrontend {
         return date("Y-m-d", strtotime(date("Y-m-d", strtotime($date)) . " -1 MONTH"));
     }
 
+    function previous6Month($date=null){
+        if(!$date) $date=$this->api->today;
+
+        return date("Y-m-d", strtotime(date("Y-m-d", strtotime($date)) . " -6 MONTH"));
+    }
+
     function nextYear($date=null){
         if(!$date) $date=$this->api->today;
 

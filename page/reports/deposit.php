@@ -11,7 +11,7 @@ class page_reports_deposit extends Page {
 		$tab1=$tabs->addTabURL('reports_deposit_emiduelist','EMI Due List');
 		$tab1=$tabs->addTabURL('reports_deposit_ddsduelist','DDS Due List');
 		// $tab1=$tabs->addTabURL('reports_agent_tds','Agent Wise TDS Comm Report');
-		// $tab1=$tabs->addTabURL('reports_deposit_fdinterestprovision','FD Interest Provision');
+		$tab1=$tabs->addTabURL('reports_deposit_fdinterestprovision','FD Interest Provision');
 		$tab1=$tabs->addTabURL('reports_deposit_duestogive','Dues To Give');
 		$tab1=$tabs->addTabURL('reports_deposit_duestoreceived','Dues To Received');
 		$tab1=$tabs->addTabURL('reports_deposit_emireceivedlist','Premium Received List');

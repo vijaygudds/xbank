@@ -53,6 +53,8 @@ class page_reports_loan_gstreceivedlist extends Page {
 		$account_join->addField('dealer_id');
 		$account_join->addField('is_in_legal');
 		$account_join->addField('is_given_for_legal_process');
+		$account_join->addField('legal_filing_date');
+		$account_join->addField('legal_process_given_date');
 
 		$scheme_join->addField('SchemeType');
 		// $transaction_type_join->addField('transaction_type_name','name');
@@ -139,7 +141,7 @@ class page_reports_loan_gstreceivedlist extends Page {
 
 
 		$transaction_row_model->add('Controller_Acl');
-		$grid->setModel($transaction_row_model,array('AccountNumber','member_name','member_address','member_landmark','FatherName','PhoneNos','amountCr','Narration','created_at','dealer_name','is_in_legal','is_given_for_legal_process','memorandum_type'));
+		$grid->setModel($transaction_row_model,array('AccountNumber','member_name','member_address','member_landmark','FatherName','PhoneNos','amountCr','Narration','created_at','dealer_name','is_in_legal','is_given_for_legal_process','memorandum_type','legal_process_given_date','legal_filing_date'));
 
 		// $grid->addHook('formatRow',function($g){
 		// 	// $this->addExpression('member_name')->set('CONCAT(name," [",id, "] :: ",IFNULL(PermanentAddress,""),"::[",IFNUll(landmark,""),"]")')->display(array('grid'=>'shorttext'));			
